@@ -13,6 +13,15 @@ export function Hero() {
       <div className="absolute left-6 top-6 h-16 w-16 border-l-2 border-t-2 border-primary/30 md:left-12 lg:left-24" />
       <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
 
+      {/* Background Skyline Image (fitted within outer frames) */}
+      <div className="absolute top-6 bottom-6 left-6 right-6 md:left-12 md:right-12 lg:left-24 lg:right-24 -z-10 pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen opacity-10">
+        <img 
+          src="/uploaded/berlin_skyline.jpg" 
+          alt="Berlin Skyline" 
+          className="w-full h-full object-contain object-bottom dark:invert" 
+        />
+      </div>
+
       <div className="px-6 py-20 md:px-12 lg:px-24 lg:py-32">
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-stretch lg:gap-16">
@@ -32,15 +41,6 @@ export function Hero() {
 
             {/* Content */}
             <div className="relative flex flex-1 flex-col justify-between text-center lg:text-left">
-              
-              {/* Background Skyline Image */}
-              <div className="absolute bottom-0 right-0 w-full max-w-2xl pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen">
-                <img 
-                  src="/uploaded/berlin_skyline.jpg" 
-                  alt="Berlin Skyline" 
-                  className="w-full h-auto object-contain object-bottom opacity-20 dark:invert" 
-                />
-              </div>
 
               <div className="relative z-10">
                 <h1 className="text-balance text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
@@ -68,11 +68,23 @@ export function Hero() {
                   </Button>
                 </div>
                 
-                {/* Prominent Location Text */}
-                <div className="flex flex-col items-end select-none pointer-events-none pb-1 relative z-20">
-                  <p className="text-xl font-bold uppercase tracking-widest text-foreground/80 md:text-2xl lg:text-3xl mix-blend-multiply dark:mix-blend-screen dark:text-foreground">
-                    Remote * Berlin
-                  </p>
+                {/* Availability Status Pill */}
+                <div className="pb-1 relative z-20 select-none pointer-events-none">
+                  <div className="inline-flex items-center gap-4 rounded-full border border-border/60 bg-background/60 px-4 py-2 text-sm text-foreground/80 shadow-sm backdrop-blur-md">
+                    <div className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 dark:text-emerald-500">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+                      </svg>
+                      <span className="font-medium">Global Remote</span>
+                    </div>
+                    <div className="h-4 w-px bg-border"></div>
+                    <div className="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 dark:text-emerald-500">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      <span className="font-medium">On-site Berlin</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
