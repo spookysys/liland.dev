@@ -1,0 +1,65 @@
+const milestones = [
+  {
+    company: "ARM Mali GPU",
+    description:
+      "Early employee at Falanx Microsystems, a startup in Norway that built the Mali GPU from scratch. ARM acquired us in 2007 — Mali powers billions of devices today.",
+  },
+  {
+    company: "Swarm64",
+    description:
+      "Co-founded Swarm64. We built FPGA-based hardware that accelerated database computation — massively parallel, deployed in the cloud. Partnered with Intel and Xilinx. Acquired by ServiceNow.",
+  },
+  {
+    company: "Orbital Machines",
+    description:
+      "Founded Orbital Machines, a sociocratic newspace startup that contributed to a number of space industry vehicles. Wrote Python software for designing and optimizing 3D propellant pump geometries for rocket engines.",
+  },
+]
+
+export function TrackRecord() {
+  return (
+    <section className="relative bg-card px-6 py-20 md:px-12 lg:px-24">
+      {/* Decorative corner accents */}
+      <div className="absolute left-6 top-6 h-16 w-16 border-l-2 border-t-2 border-primary/30 md:left-12 lg:left-24" />
+      <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
+      
+      <div className="mx-auto max-w-5xl">
+        <div className="mb-12 flex items-center gap-4">
+          <div className="h-12 w-1.5 rounded-full bg-accent" />
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            Where I&apos;ve Been
+          </h2>
+        </div>
+        
+        <div className="space-y-0">
+          {milestones.map((item, index) => (
+            <div 
+              key={item.company} 
+              className="group relative flex gap-6 pb-10 last:pb-0"
+            >
+              {/* Timeline */}
+              <div className="flex flex-col items-center">
+                <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-sm font-bold text-primary-foreground shadow-lg transition-transform group-hover:scale-110">
+                  {index + 1}
+                  {/* Pulse ring on hover */}
+                  <span className="absolute inset-0 rounded-xl border-2 border-primary opacity-0 transition-opacity group-hover:animate-ping group-hover:opacity-50" />
+                </div>
+                {index < milestones.length - 1 && (
+                  <div className="mt-3 h-full w-0.5 bg-gradient-to-b from-primary/40 to-transparent" />
+                )}
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl font-bold">{item.company}</h3>
+                <p className="mt-2 text-pretty leading-relaxed text-muted-foreground">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
