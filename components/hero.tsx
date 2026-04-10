@@ -24,9 +24,9 @@ export function Hero() {
 
       <div className="px-6 py-20 md:px-12 lg:px-24 lg:py-32">
         <div className="mx-auto max-w-5xl">
-          <div className="flex flex-col gap-12 lg:flex-row lg:items-stretch lg:gap-16">
+          <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:gap-16">
             {/* Headshot */}
-            <div className="relative mx-auto shrink-0 lg:mx-0 lg:w-80">
+            <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0">
               <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-full lg:w-full">
                 <img
                   src="/uploaded/profi-profil.jpg"
@@ -40,18 +40,17 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative flex flex-1 flex-col justify-between text-center lg:text-left">
-
-              <div className="relative z-10">
-                <h1 className="text-balance text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+            <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-8 text-center lg:mx-0 lg:max-w-none lg:flex-1 lg:items-start lg:justify-between lg:text-left">
+              <div className="relative z-10 flex flex-col items-center lg:items-start">
+                <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                   Eivind Liland
                 </h1>
 
-                <p className="mt-1 text-xl font-medium text-primary md:text-2xl">
+                <p className="mt-1 text-lg font-medium text-primary sm:text-xl md:text-2xl">
                   Parallel Accelerator Specialist
                 </p>
 
-                <div className="mt-8 max-w-2xl lg:mx-0">
+                <div className="mx-auto mt-8 max-w-2xl lg:mx-0">
                   <h2 className="inline-block border-b-2 border-accent pb-1 text-lg font-semibold">
                     Hardware & Software Consultant
                   </h2>
@@ -61,23 +60,23 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="mt-12 flex flex-col items-center justify-between gap-8 sm:flex-row sm:items-end lg:mt-0">
-                <div className="pb-1 relative z-20">
+              <div className="relative z-20 mt-2 flex flex-col items-center gap-4 sm:gap-5 lg:mt-0 lg:flex-row lg:items-end lg:justify-between">
+                <div className="pb-1">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
                     <a href="#contact">Get in touch</a>
                   </Button>
                 </div>
-                
+
                 {/* Availability Status Pill */}
-                <div className="pb-1 relative z-20 select-none pointer-events-none">
-                  <div className="inline-flex items-center gap-4 rounded-full border border-border/60 bg-background/60 px-4 py-2 text-sm text-foreground/80 shadow-sm backdrop-blur-md">
+                <div className="max-w-full select-none pointer-events-none pb-1">
+                  <div className="inline-flex h-10 max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-border/60 bg-background/60 px-6 text-sm text-foreground/80 shadow-sm backdrop-blur-md">
                     <div className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 dark:text-emerald-500">
                         <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
                       </svg>
                       <span className="font-medium">Global Remote</span>
                     </div>
-                    <div className="h-4 w-px bg-border"></div>
+                    <div className="hidden h-4 w-px bg-border sm:block"></div>
                     <div className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 dark:text-emerald-500">
                         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
