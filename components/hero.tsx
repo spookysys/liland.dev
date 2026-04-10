@@ -4,10 +4,14 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       {/* Background accent */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 bg-card">
         <div className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/4 translate-x-1/4 rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-[400px] w-[400px] translate-y-1/4 -translate-x-1/4 rounded-full bg-accent/10 blur-3xl" />
       </div>
+
+      {/* Decorative corner accents */}
+      <div className="absolute left-6 top-6 h-16 w-16 border-l-2 border-t-2 border-primary/30 md:left-12 lg:left-24" />
+      <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
 
       <div className="px-6 py-20 md:px-12 lg:px-24 lg:py-32">
         <div className="mx-auto max-w-5xl">
@@ -47,7 +51,7 @@ export function Hero() {
                   Hardware & Software Consultant
                 </h2>
                 <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-                  I work across the stack: Algorithms, coding, design and verification. From out-of-order SIMT cores and parallel coherent memory for graphics, compute, or AI inference, I love the challenge of finding trade-offs that maximize throughput with minimal power. I am available for projects on location in Berlin, or worldwide online.
+                  I work across the stack: Algorithms, coding, design and verification. From out-of-order SIMT cores and parallel coherent memory for graphics, compute, or AI inference, I love the challenge of finding trade-offs that maximize throughput with minimal power. Available for remote work globally, or on-site in the Berlin area.
                 </p>
                 <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">

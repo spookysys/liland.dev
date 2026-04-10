@@ -18,21 +18,18 @@ export function HowIWork() {
 
             <div className="flex flex-col gap-6 text-lg leading-relaxed text-muted-foreground">
               <p>
-              Available for remote work worldwide and 
-              on-site in the Berlin area.
-            </p>
-            <p>
-              I work on contract — short engagements, long-term projects, or 
-              advisory. Happy to start with a conversation about what you need and 
-              figure out the right format from there.
-            </p>
+                I partner with teams on a contract basis — whether that means short-term consulting, extended project work, or strategic advisory. 
+              </p>
+              <p>
+                I'm available for remote work globally, or on-site in the Berlin area. I am always happy to start with a quick conversation to find the engagement model that best suits your needs.
+              </p>
             
             <div className="mt-8 rounded-2xl border bg-background p-8 shadow-sm">
               <h3 className="mb-4 text-2xl font-bold text-foreground">
                 Ready to talk?
               </h3>
               <p className="mb-6 text-base text-muted-foreground">
-                Whether you need a quick advisory call or a dedicated specialist, let's discuss your project's architecture, verification, or performance needs.
+                From high-level architectural guidance to hands-on implementation and verification, let's discuss how I can help accelerate your next project.
               </p>
               <Button asChild size="lg" className="h-14 w-full rounded-xl text-lg font-semibold shadow-lg transition-all hover:scale-[1.02] sm:w-auto sm:px-10">
                 <a href="#contact">Get in Touch</a>
