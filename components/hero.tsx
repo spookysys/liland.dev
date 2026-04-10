@@ -17,24 +17,17 @@ export function Hero() {
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
             {/* Headshot */}
-            <div className="relative mx-auto flex shrink-0 flex-col items-center w-56 md:w-72 lg:w-88 lg:mx-0">
-              <div className="relative h-64 w-full overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 lg:h-104">
+            <div className="relative mx-auto shrink-0 lg:mx-0">
+              <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-104 lg:w-88">
                 <img
                   src="/uploaded/profi-profil.jpg"
                   alt="Eivind Liland"
                   className="h-full w-full object-cover object-top"
                 />
               </div>
-              
-              <div className="relative -mt-5 z-10 flex w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-3 py-2 shadow-md md:px-4">
-                <span className="relative flex h-2 w-2 shrink-0">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
-                </span>
-                <span className="truncate text-xs font-medium text-muted-foreground text-center md:text-sm">
-                  Available for remote & Berlin on-site projects
-                </span>
-              </div>
+              {/* Decorative elements */}
+              <div className="absolute -bottom-5 -right-5 -z-10 h-32 w-32 rounded-3xl border-2 border-primary/20 md:-bottom-6 md:-right-6 md:h-40 md:w-40" />
+              <div className="absolute -left-3 -top-3 -z-10 h-8 w-8 rounded-full bg-accent/40" />
             </div>
 
             {/* Content */}
@@ -54,10 +47,36 @@ export function Hero() {
                 <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
                   I work across the entire stack: from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing highly optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
                 </p>
-                <div className="mt-8 flex flex-col items-center sm:flex-row lg:justify-start">
+                <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
                     <a href="#contact">Get in touch</a>
                   </Button>
+                  
+                  <div className="flex flex-col items-center sm:items-start">
+                    <p className="text-sm font-medium text-muted-foreground flex items-center gap-1.5">
+                      <span className="relative flex h-1.5 w-1.5 shrink-0">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                      </span> 
+                      Remote (Global) & On-site (Berlin)
+                    </p>
+                    {/* Discreet Berlin Skyline visual */}
+                    <svg className="mt-0.5 h-[1.125rem] w-auto opacity-30 invert dark:invert-0" viewBox="0 0 100 24" fill="currentColor" aria-hidden="true">
+                      {/* Base/Ground */}
+                      <rect x="0" y="22" width="100" height="2" />
+                      {/* Various buildings */}
+                      <rect x="5" y="14" width="8" height="8" />
+                      <rect x="16" y="10" width="10" height="12" />
+                      <rect x="28" y="16" width="6" height="6" />
+                      <rect x="68" y="12" width="12" height="10" />
+                      <rect x="83" y="15" width="10" height="7" />
+                      <rect x="95" y="18" width="5" height="4" />
+                      {/* Famous TV Tower (Fernsehturm) styling for immediate Berlin recognition */}
+                      <path d="M48 22V8h-1V6a2.5 2.5 0 0 1-1.5-2A2.5 2.5 0 0 1 47 1.5V0h2v1.5a2.5 2.5 0 0 1 1.5 2.5A2.5 2.5 0 0 1 49 6v2h-1v14h-2z" />
+                      <rect x="54" y="18" width="6" height="4" />
+                      <rect x="62" y="8" width="4" height="14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
