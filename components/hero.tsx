@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
 
       {/* Background Skyline Image (fitted within outer frames) */}
-      <div className="absolute top-6 bottom-6 left-6 right-6 md:left-12 md:right-12 lg:left-24 lg:right-24 -z-10 pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen opacity-10">
+      <div className="absolute top-6 bottom-6 left-6 right-6 md:left-12 md:right-12 lg:left-24 lg:right-24 -z-10 pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen opacity-[0.07]">
         <img 
           src="/uploaded/berlin_skyline.jpg" 
           alt="Berlin Skyline" 
@@ -55,7 +55,7 @@ export function Hero() {
                   <h2 className="inline-block border-b-2 border-accent pb-1 text-lg font-semibold">
                     Hardware & Software Consultant
                   </h2>
-                  <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+                  <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
                     I work across the entire stack: from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing highly optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
                   </p>
                 </div>
