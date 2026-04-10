@@ -47,7 +47,7 @@ export function Hero() {
                   Hardware & Software Consultant
                 </h2>
                 <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-                  I work across the stack: Algorithms, coding, design and verification. From out-of-order SIMT cores and parallel coherent memory for graphics, compute, or AI inference, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                  I work across the stack: Algorithms, coding, design and verification. From out-of-order SIMT cores and parallel coherent memory for graphics, compute, or AI inference, I love the challenge of finding trade-offs that maximize throughput with minimal power. I am available for projects on location in Berlin, or worldwide online.
                 </p>
                 <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
