@@ -38,7 +38,7 @@ export function Hero() {
                 Eivind Liland
               </h1>
 
-              <p className="mt-4 text-xl font-medium text-primary md:text-2xl">
+              <p className="mt-1 text-xl font-medium text-primary md:text-2xl">
                 Parallel Accelerator Specialist
               </p>
 
