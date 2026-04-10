@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "preview:static": "python3 -m http.server 8080 -d out",
     "lint": "eslint ."
   },
   "dependencies": {

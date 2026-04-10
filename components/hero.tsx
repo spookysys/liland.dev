@@ -16,7 +16,7 @@ export function Hero() {
       {/* Background Skyline Image (fitted within outer frames) */}
       <div className="absolute top-6 bottom-6 left-6 right-6 md:left-12 md:right-12 lg:left-24 lg:right-24 -z-10 pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen opacity-[0.07]">
         <img 
-          src="/uploaded/berlin_skyline.jpg" 
+          src="/images/berlin_skyline.jpg" 
           alt="Berlin Skyline" 
           className="w-full h-full object-contain object-bottom dark:invert" 
         />
@@ -29,7 +29,7 @@ export function Hero() {
             <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0">
               <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-full lg:w-full">
                 <img
-                  src="/uploaded/profi-profil.jpg"
+                  src="/images/profi-profil.jpg"
                   alt="Eivind Liland"
                   className="h-full w-full object-cover object-center"
                 />

@@ -42,7 +42,7 @@ export function HowIWork() {
 
           <div className="relative aspect-4/3 w-full h-full overflow-hidden rounded-3xl border-4 border-muted shadow-2xl lg:aspect-auto">
             <img 
-              src="/uploaded/berlin-photo.jpg" 
+              src="/images/berlin-photo.jpg" 
               alt="Berlin city view" 
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />

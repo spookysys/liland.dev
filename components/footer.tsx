@@ -9,7 +9,7 @@ export function Footer() {
           href="/impressum.html"
           className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:underline"
         >
-          Impressum
+          Impressum & Privacy Policy
         </a>
       </div>
     </footer>
