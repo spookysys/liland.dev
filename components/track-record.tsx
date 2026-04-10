@@ -2,7 +2,7 @@ const milestones = [
   {
     company: "ARM Mali GPU",
     description:
-      "Early employee at Falanx Microsystems, a startup in Norway that built the Mali GPU from scratch. ARM acquired us in 2007 — Mali powers billions of devices today.",
+      "Early employee at Falanx Microsystems, a startup in Norway that built the Mali GPU from scratch. Contributed across the stack, spanning RTL design and verification of the GPU to writing bare-metal software and pre-silicon tech demos for early FPGA prototypes. ARM acquired us in 2007 — Mali powers billions of devices today.",
   },
   {
     company: "Swarm64",

@@ -7,7 +7,7 @@ const expertise = [
   {
     title: "Software Development",
     description:
-      "I've built software at every level of abstraction — from bare-metal assembly and GPU shaders to GPU-accelerated scientific computing and optimization in Python. Whether the problem is wringing cycles out of constrained hardware or designing algorithms for massively parallel systems, I can help.",
+      "I've built software at every level of abstraction — from bare-metal C/C++, assembly, and extreme constraint optimization, to GPU-accelerated scientific computing and algorithms in Python. Whether the problem is wringing cycles out of constrained hardware or writing procedural generators for massively parallel systems, I can help.",
   },
   {
     title: "RTL Design",
@@ -23,9 +23,10 @@ const expertise = [
 
 export function ExpertiseGrid() {
   return (
-    <section className="relative px-6 py-20 md:px-12 lg:px-24">
-      {/* Section accent line */}
-      <div className="absolute left-6 top-0 h-px w-[calc(100%-3rem)] bg-gradient-to-r from-transparent via-border to-transparent md:left-12 md:w-[calc(100%-6rem)] lg:left-24 lg:w-[calc(100%-12rem)]" />
+    <section className="relative bg-card px-6 py-20 md:px-12 lg:px-24">
+      {/* Decorative corner accents */}
+      <div className="absolute left-6 top-6 h-16 w-16 border-l-2 border-t-2 border-primary/30 md:left-12 lg:left-24" />
+      <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
 
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex items-center gap-4">
@@ -39,11 +40,11 @@ export function ExpertiseGrid() {
           {expertise.map((item, index) => (
             <div
               key={item.title}
-              className="group relative rounded-xl border-2 border-transparent bg-card p-6 shadow-sm transition-all hover:border-primary/20 hover:shadow-md"
+              className="group relative rounded-xl border-2 border-transparent bg-background p-6 shadow-sm transition-all hover:border-primary/20 hover:shadow-md"
             >
               {/* Card number accent */}
               <span className="absolute -top-3 right-4 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-                {index + 1}
+                {['I', 'II', 'III', 'IV'][index]}
               </span>
 
               <h3 className="text-lg font-bold text-card-foreground">

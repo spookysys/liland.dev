@@ -18,6 +18,7 @@ const projects = [
   {
     category: "Software & Algorithms",
     items: [
+      "Procedural real-time rendering algorithms under extreme memory/size constraints",
       "GPU-accelerated computational fluid dynamics solver",
       "Custom shader compiler backend for proprietary GPU ISA",
       "Real-time signal processing pipeline on embedded DSP",
