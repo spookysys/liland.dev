@@ -15,14 +15,14 @@ export function Hero() {
 
       <div className="px-6 py-20 md:px-12 lg:px-24 lg:py-32">
         <div className="mx-auto max-w-5xl">
-          <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-stretch lg:gap-16">
             {/* Headshot */}
-            <div className="relative mx-auto shrink-0 lg:mx-0">
-              <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-104 lg:w-88">
+            <div className="relative mx-auto shrink-0 lg:mx-0 lg:w-80">
+              <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-full lg:w-full">
                 <img
                   src="/uploaded/profi-profil.jpg"
                   alt="Eivind Liland"
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full object-cover object-center"
                 />
               </div>
               {/* Decorative elements */}
@@ -31,52 +31,48 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-balance text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-                Eivind Liland
-              </h1>
+            <div className="relative flex flex-1 flex-col justify-between text-center lg:text-left">
+              
+              {/* Background Skyline Image */}
+              <div className="absolute bottom-0 right-0 w-full max-w-2xl pointer-events-none select-none mix-blend-multiply dark:mix-blend-screen">
+                <img 
+                  src="/uploaded/berlin_skyline.jpg" 
+                  alt="Berlin Skyline" 
+                  className="w-full h-auto object-contain object-bottom opacity-20 dark:invert" 
+                />
+              </div>
 
-              <p className="mt-1 text-xl font-medium text-primary md:text-2xl">
-                Parallel Accelerator Specialist
-              </p>
+              <div className="relative z-10">
+                <h1 className="text-balance text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+                  Eivind Liland
+                </h1>
 
-              <div className="mt-8 max-w-2xl lg:mx-0">
-                <h2 className="inline-block border-b-2 border-accent pb-1 text-lg font-semibold">
-                  Hardware & Software Consultant
-                </h2>
-                <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-                  I work across the entire stack: from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing highly optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                <p className="mt-1 text-xl font-medium text-primary md:text-2xl">
+                  Parallel Accelerator Specialist
                 </p>
-                <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row lg:justify-start">
+
+                <div className="mt-8 max-w-2xl lg:mx-0">
+                  <h2 className="inline-block border-b-2 border-accent pb-1 text-lg font-semibold">
+                    Hardware & Software Consultant
+                  </h2>
+                  <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+                    I work across the entire stack: from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing highly optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-12 flex flex-col items-center justify-between gap-8 sm:flex-row sm:items-end lg:mt-0">
+                <div className="pb-1 relative z-20">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
                     <a href="#contact">Get in touch</a>
                   </Button>
-                  
-                  <div className="flex flex-col items-center sm:items-start">
-                    <p className="text-sm font-medium text-muted-foreground flex items-center gap-1.5">
-                      <span className="relative flex h-1.5 w-1.5 shrink-0">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-                      </span> 
-                      Remote (Global) & On-site (Berlin)
-                    </p>
-                    {/* Discreet Berlin Skyline visual */}
-                    <svg className="mt-0.5 h-[1.125rem] w-auto opacity-30 invert dark:invert-0" viewBox="0 0 100 24" fill="currentColor" aria-hidden="true">
-                      {/* Base/Ground */}
-                      <rect x="0" y="22" width="100" height="2" />
-                      {/* Various buildings */}
-                      <rect x="5" y="14" width="8" height="8" />
-                      <rect x="16" y="10" width="10" height="12" />
-                      <rect x="28" y="16" width="6" height="6" />
-                      <rect x="68" y="12" width="12" height="10" />
-                      <rect x="83" y="15" width="10" height="7" />
-                      <rect x="95" y="18" width="5" height="4" />
-                      {/* Famous TV Tower (Fernsehturm) styling for immediate Berlin recognition */}
-                      <path d="M48 22V8h-1V6a2.5 2.5 0 0 1-1.5-2A2.5 2.5 0 0 1 47 1.5V0h2v1.5a2.5 2.5 0 0 1 1.5 2.5A2.5 2.5 0 0 1 49 6v2h-1v14h-2z" />
-                      <rect x="54" y="18" width="6" height="4" />
-                      <rect x="62" y="8" width="4" height="14" />
-                    </svg>
-                  </div>
+                </div>
+                
+                {/* Prominent Location Text */}
+                <div className="flex flex-col items-end select-none pointer-events-none pb-1 relative z-20">
+                  <p className="text-xl font-bold uppercase tracking-widest text-foreground/80 md:text-2xl lg:text-3xl mix-blend-multiply dark:mix-blend-screen dark:text-foreground">
+                    Remote * Berlin
+                  </p>
                 </div>
               </div>
             </div>
