@@ -63,7 +63,7 @@ export function Hero() {
               <div className="relative z-20 mt-2 flex flex-col items-center gap-4 sm:gap-5 lg:mt-0 lg:flex-row lg:items-end lg:justify-between">
                 <div className="pb-1">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
-                    <a href="#contact">Get in touch</a>
+                    <a href="mailto:hello@liland.dev">Get in touch</a>
                   </Button>
                 </div>
 

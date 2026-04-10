@@ -34,7 +34,7 @@ export function HowIWork() {
                   From high-level architectural guidance to hands-on implementation and verification, let's discuss how I can help accelerate your next project.
                 </p>
                 <Button asChild size="lg" className="h-14 w-full rounded-xl text-lg font-semibold shadow-lg transition-all hover:scale-[1.02] sm:w-auto sm:px-10">
-                  <a href="#contact">Get in Touch</a>
+                  <a href="mailto:hello@liland.dev">Get in Touch</a>
                 </Button>
               </div>
             </div>
@@ -42,7 +42,7 @@ export function HowIWork() {
 
           <div className="relative aspect-4/3 w-full h-full overflow-hidden rounded-3xl border-4 border-muted shadow-2xl lg:aspect-auto">
             <img 
-              src="https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              src="/uploaded/berlin-photo.jpg" 
               alt="Berlin city view" 
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
