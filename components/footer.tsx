@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="relative px-6 py-12 md:px-12 lg:px-24">
+    <footer className="relative px-6 py-6 md:px-12 lg:px-24">
       {/* Section accent line */}
       <div className="absolute left-6 top-0 h-px w-[calc(100%-3rem)] bg-linear-to-r from-transparent via-border to-transparent md:left-12 md:w-[calc(100%-6rem)] lg:left-24 lg:w-[calc(100%-12rem)]" />
 
