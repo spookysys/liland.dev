@@ -3,6 +3,7 @@ const projects = [
     category: "Architecture",
     items: [
       "Microarchitecture for massively multicore FPGA processing platform",
+      "Memory subsystem architecture for massively parallel processing platform",
       "Hierarchical tiler for mobile GPU — now ARM Mali, in billions of devices",
       "FPGA-based GPU prototype for Gameboy Advance",
       "Named inventor on five ARM Mali GPU patents",
@@ -20,7 +21,8 @@ const projects = [
   {
     category: "RTL Design",
     items: [
-      "Out-of-order 16-lane WARP core with fixed- and floating-point arithmetic",
+      "Out-of-order 16-lane WARP core",
+      "Fixed-point and floating-point arithmetic units",
       "Coherent cache hierarchy supporting thousands of out-of-order requests",
       "High-bandwidth 2D routing network for out-of-order cache system",
       "Subpixel triangle rasterizer for FPGA-based GPU",
