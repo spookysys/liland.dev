@@ -7,7 +7,7 @@ const expertise = [
   {
     title: "Software Development",
     description:
-      "I've built software at every level of abstraction — from bare-metal C/C++, assembly, and extreme constraint optimization, to GPU-accelerated computing and algorithms in Python. Whether the problem is wringing cycles out of constrained hardware or writing procedural generators for massively parallel systems, I can help.",
+      "I've built software at every level of abstraction — from bare-metal C/C++, assembly, and extreme constraint optimization, to GPU-accelerated algorithms in Python. Whether the problem is wringing cycles out of constrained hardware or writing algorithms for massively parallel systems, I can help.",
   },
   {
     title: "RTL Design",
