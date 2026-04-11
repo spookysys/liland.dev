@@ -1,35 +1,36 @@
 const projects = [
   {
-    category: "GPU Architecture",
+    category: "Architecture",
     items: [
-      "Designed out-of-order WARP scheduling logic for a mobile GPU core",
-      "Built custom memory hierarchy for bandwidth-constrained AI accelerator",
-      "Prototyped novel register file design reducing area by 30%",
+      "System- and microarchitecture for high-density massively multicore FPGA processing platform",
+      "Architecture design of hierarchical tiler for mobile GPU — now ARM Mali, shipping in billions of devices",
+      "Prototype FPGA-based GPU architecture for Gameboy Advance",
     ],
   },
   {
-    category: "RTL & Silicon",
+    category: "RTL Design",
     items: [
-      "Full RTL implementation of a RISC-V vector extension subset",
-      "UVM testbench infrastructure for multi-million gate SoC",
-      "FPGA prototype of custom matrix multiply unit",
+      "Out-of-order 16-lane WARP core with fixed-point and floating-point arithmetic units",
+      "Multi-level coherent cache hierarchy supporting thousands of outstanding out-of-order requests",
+      "High-bandwidth 2D data routing network for massively out-of-order coherent cache system",
+      "High-density subpixel triangle rasterizer for prototype FPGA-based GPU",
     ],
   },
   {
-    category: "Software & Algorithms",
+    category: "Verification",
     items: [
-      "Procedural real-time rendering algorithms under extreme memory/size constraints",
-      "GPU-accelerated computational fluid dynamics solver",
-      "Custom shader compiler backend for proprietary GPU ISA",
-      "Real-time signal processing pipeline on embedded DSP",
+      "Verification, debugging, and bug-fixing across GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
+      "Real-time 3D game-style tech demos for GPU marketing and pre-silicon validation — visual quality beyond what audiences expected from shipping silicon, running on FPGA at a fraction of final clock speed",
+      "Hardware design and verification CI pipeline for FPGA-based startup",
     ],
   },
   {
-    category: "Systems & Integration",
+    category: "Software",
     items: [
-      "End-to-end verification environment for PCIe Gen4 controller",
-      "Driver stack for custom AI inference accelerator",
-      "Performance modeling framework for early-stage architecture exploration",
+      "Vulkan GPU drivers for ARM Mali series (C / ARM / Linux / Android)",
+      <><em>Texas</em> — award-winning 4K intro on the first SIMT GPU (GeForce 8): fully directed real-time 3D with procedural geometry, lighting, and audio in under 4,096 bytes (1st place NVScene, Scene.org Award)</>,
+      <>Real-time 3D rendering engines for Gameboy Advance (16 MHz ARM7, no GPU, no FPU) including <em>Five Finger Discount</em>, nominated for Scene.org Awards in best demo and best effects</>,
+      "Parametric design and optimization tools for centrifugal pump geometry — deployed in propellant systems for zero-emission aircraft and space vehicles",
     ],
   },
 ]
@@ -69,8 +70,8 @@ export function ThingsBuilt() {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-sm text-muted-foreground">
-          These are placeholders — replace with your actual projects and accomplishments.
+        <p className="mt-10 text-sm italic text-muted-foreground">
+          Named inventor on five patents from work on the ARM Mali GPU.
         </p>
       </div>
     </section>
