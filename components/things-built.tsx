@@ -2,35 +2,37 @@ const projects = [
   {
     category: "Architecture",
     items: [
-      "System- and microarchitecture for high-density massively multicore FPGA processing platform",
-      "Architecture design of hierarchical tiler for mobile GPU — now ARM Mali, shipping in billions of devices",
-      "Prototype FPGA-based GPU architecture for Gameboy Advance",
-    ],
-  },
-  {
-    category: "RTL Design",
-    items: [
-      "Out-of-order 16-lane WARP core with fixed-point and floating-point arithmetic units",
-      "Multi-level coherent cache hierarchy supporting thousands of outstanding out-of-order requests",
-      "High-bandwidth 2D data routing network for massively out-of-order coherent cache system",
-      "High-density subpixel triangle rasterizer for prototype FPGA-based GPU",
-    ],
-  },
-  {
-    category: "Verification",
-    items: [
-      "Verification, debugging, and bug-fixing across GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
-      "Real-time 3D game-style tech demos for GPU marketing and pre-silicon validation — visual quality beyond what audiences expected from shipping silicon, running on FPGA at a fraction of final clock speed",
-      "Hardware design and verification CI pipeline for FPGA-based startup",
+      "Microarchitecture for massively multicore FPGA processing platform",
+      "Hierarchical tiler for mobile GPU — now ARM Mali, in billions of devices",
+      "FPGA-based GPU prototype for Gameboy Advance",
+      "Named inventor on five ARM Mali GPU patents",
     ],
   },
   {
     category: "Software",
     items: [
-      "Vulkan GPU drivers for ARM Mali series (C / ARM / Linux / Android)",
-      <><em>Texas</em> — award-winning 4K intro on the first SIMT GPU (GeForce 8): fully directed real-time 3D with procedural geometry, lighting, and audio in under 4,096 bytes (1st place NVScene, Scene.org Award)</>,
-      <>Real-time 3D rendering engines for Gameboy Advance (16 MHz ARM7, no GPU, no FPU) including <em>Five Finger Discount</em>, nominated for Scene.org Awards in best demo and best effects</>,
-      "Parametric design and optimization tools for centrifugal pump geometry — deployed in propellant systems for zero-emission aircraft and space vehicles",
+      "Vulkan drivers for ARM Mali (C / ARM / Linux / Android)",
+      <><em>Texas</em> — real-time 3D in under 4,096 bytes on the first SIMT GPU. 1st place NVScene, Scene.org Award</>,
+      <><em>Five Finger Discount</em> — 3D engine for Gameboy Advance (16 MHz ARM7, no GPU). Scene.org Award nominations</>,
+      "Pump geometry design tools deployed in propellant systems for launch vehicles and zero-emission aircraft",
+    ],
+  },
+  {
+    category: "RTL Design",
+    items: [
+      "Out-of-order 16-lane WARP core with fixed- and floating-point arithmetic",
+      "Coherent cache hierarchy supporting thousands of out-of-order requests",
+      "High-bandwidth 2D routing network for out-of-order cache system",
+      "Subpixel triangle rasterizer for FPGA-based GPU",
+    ],
+  },
+  {
+    category: "Verification",
+    items: [
+      "GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
+      "Functional verification of parallel processor core, arithmetic units, and interconnect",
+      "Real-time 3D tech demos for GPU marketing and pre-silicon validation on FPGA",
+      "Design and verification CI pipeline for hardware startup",
     ],
   },
 ]
@@ -69,10 +71,6 @@ export function ThingsBuilt() {
             </div>
           ))}
         </div>
-
-        <p className="mt-10 text-sm italic text-muted-foreground">
-          Named inventor on five patents from work on the ARM Mali GPU.
-        </p>
       </div>
     </section>
   )
