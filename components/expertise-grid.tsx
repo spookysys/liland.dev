@@ -2,12 +2,12 @@ const expertise = [
   {
     title: "Parallel Architectures",
     description:
-      "Compute architecture for GPUs, accelerators, and AI processors. The core problems in modern AI hardware — memory bandwidth walls, dataflow scheduling, keeping arithmetic units fed — are problems I've been working on since before they had an AI label. That covers systems from single embedded processors to thousands of parallel execution units. Available for hands-on design or high-level advisory.",
+      "Compute architecture for GPUs, accelerators, and AI processors. Memory bandwidth walls, dataflow scheduling, keeping arithmetic units fed — I've been solving these across single-core to massively parallel systems since before they carried an AI label.",
   },
   {
     title: "Software Development",
     description:
-      "I've built software at every level of abstraction — from bare-metal C/C++, assembly, and extreme constraint optimization, to GPU-accelerated algorithms in Python. Whether the problem is wringing cycles out of constrained hardware or writing algorithms for massively parallel systems, I can help.",
+      "From bare-metal C/C++ and assembly to GPU-accelerated Python — I work at every level of abstraction. Whether it's wringing cycles out of constrained hardware or writing algorithms for massively parallel systems, I can help.",
   },
   {
     title: "RTL Design",

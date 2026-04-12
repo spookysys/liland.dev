@@ -18,7 +18,7 @@ export function HowIWork() {
 
             <div className="flex flex-col gap-6 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I partner with teams on a contract basis — whether that means short-term consulting, extended project work, or strategic advisory. 
+                I partner with teams on a contract basis, billed hourly — whether that means short-term consulting, extended project work, or strategic advisory. 
               </p>
               <p>
                 I'm available for remote work globally, or on-site in the Berlin area. I am always happy to start with a quick conversation to find the engagement model that best suits your needs.
