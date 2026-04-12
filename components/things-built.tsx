@@ -1,4 +1,5 @@
 "use client"
+
 import { useState } from "react"
 
 const projects = [
@@ -6,11 +7,11 @@ const projects = [
     category: "Architecture",
     items: [
       {
-        text: "Microarchitecture for massively multicore FPGA processing platform",
+        text: "Massively multicore FPGA processing platform",
         detail: "Lead architect. Swarm64, 2012–2016. High-density 4-core cluster with out-of-order 16-way SIMT scheduling for massively parallel database acceleration on Xilinx FPGAs.",
       },
       {
-        text: "Memory subsystem architecture for massively parallel processing platform",
+        text: "Memory subsystem for massively parallel processor",
         detail: "Lead architect. Swarm64, 2012–2016. Multi-level coherent cache hierarchy and 2D interconnect topology sustaining bandwidth for thousands of simultaneous out-of-order requests across the multicore fabric.",
       },
       {
@@ -22,7 +23,7 @@ const projects = [
         detail: "Sole designer. Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
       },
       {
-        text: "Named inventor on five ARM Mali GPU patents",
+        text: "Five ARM Mali GPU patents",
         detail: "Co-inventor. Falanx/ARM, 2003–2009. Patents covering graphics processing systems, data compression, and rendering pipeline innovations.",
       },
     ],
@@ -31,20 +32,20 @@ const projects = [
     category: "Software",
     items: [
       {
-        text: "Vulkan drivers for ARM Mali (C / ARM / Linux / Android)",
+        text: "Vulkan drivers for ARM Mali",
         detail: "Team contributor. ARM, 2017–2018. Low-level driver development for the Mali GPU series.",
       },
       {
-        text: <><em>Texas</em> — real-time 3D in under 4,096 bytes on the first SIMT GPU. 1st place NVScene, Scene.org Award</>,
+        text: "Pump geometry tools for rocket engines and zero-emission aircraft",
+        detail: "Co-developer. Orbital Machines / OM Consulting, 2019–2023. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry. Deployed for a satellite launcher, a moon lander, and a zero-emission passenger aircraft program.",
+      },
+      {
+        text: <><em>Texas</em> — real-time 3D in under 4,096 bytes. 1st place NVScene, Scene.org Award</>,
         detail: "Sole programmer. Keyboarders, 2008. Built on the then-new GeForce 8 — NVIDIA's first SIMT architecture with a unified shader pipeline. DX10 geometry shaders, screen-space ambient occlusion, procedural geometry, audio remixed from a Vista system sample. Pouët all-time #42.",
       },
       {
-        text: <><em>Five Finger Discount</em> — 3D engine for Gameboy Advance (16 MHz ARM7, no GPU). Scene.org Award nominations</>,
+        text: <><em>Five Finger Discount</em> — 3D engine for Gameboy Advance. Scene.org Award nominations</>,
         detail: "3D engine programmer (two-person coding team). Shitfaced Clowns, 2005–2006. Software rendering, fixed-point math, everything from scratch — no OS, no libraries. 2nd place Breakpoint 2006. Nominated for Scene.org Awards in best demo and best effects.",
-      },
-      {
-        text: "Pump geometry design tools deployed in propellant systems for launch vehicles and zero-emission aircraft",
-        detail: "Co-developer. Orbital Machines / OM Consulting, 2019–2023. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry. Deployed for a satellite launcher, a moon lander, and a zero-emission passenger aircraft program.",
       },
     ],
   },
@@ -60,12 +61,8 @@ const projects = [
         detail: "Lead designer. Swarm64, 2012–2016. Arithmetic units designed for the WARP core pipeline.",
       },
       {
-        text: "Coherent cache hierarchy supporting thousands of out-of-order requests",
-        detail: "Lead architect. Swarm64, 2012–2016. Multi-level cache system with coherency across the multicore fabric.",
-      },
-      {
-        text: "High-bandwidth 2D interconnect for out-of-order cache system",
-        detail: "Lead architect. Swarm64, 2012–2016. 2D topology chosen for FPGA routing efficiency and scalable bandwidth.",
+        text: "Coherent cache hierarchy with high-bandwidth 2D interconnect",
+        detail: "Lead architect. Swarm64, 2012–2016. Multi-level cache system with coherency and a 2D interconnect topology chosen for FPGA routing efficiency, sustaining bandwidth for thousands of simultaneous out-of-order requests across the multicore fabric.",
       },
       {
         text: "Subpixel triangle rasterizer for FPGA-based GPU",
@@ -81,15 +78,15 @@ const projects = [
         detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and massively out-of-order caches.",
       },
       {
-        text: "Functional verification of parallel processor core, arithmetic units, and interconnect",
+        text: "Parallel processor core, arithmetic units, and interconnect",
         detail: "Verification engineer. Falanx/ARM and Swarm64, 2003–2016. Functional verification across two different architectures — mobile GPU and parallel database accelerator.",
       },
       {
-        text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation on FPGA",
+        text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation",
         detail: "Lead developer. Falanx, 2003–2006. Non-interactive game-style 3D demos in OpenGL ES running on FPGA prototypes at a fraction of final silicon speed, delivering visual quality beyond what audiences expected from shipping GPUs at the time.",
       },
       {
-        text: "Design and verification CI pipeline for hardware startup",
+        text: "CI pipeline for hardware startup",
         detail: "Lead developer. Swarm64, 2012–2016. Automated regression, build, and validation flows built on open-source tooling.",
       },
     ],
