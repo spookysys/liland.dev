@@ -29,7 +29,7 @@ export function Hero() {
             <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0 lg:self-stretch">
               <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:absolute lg:inset-0 lg:h-auto lg:w-auto">
                 <img
-                  src="/images/profi-profil3.jpg"
+                  src="/images/profi-profil4.jpg"
                   alt="Eivind Liland"
                   className="h-full w-full object-cover object-[50%_33%]"
                 />
@@ -55,7 +55,7 @@ export function Hero() {
                     Hardware & Software Consultant
                   </h2>
                   <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
-                    I work across the entire stack: from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing highly optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                    I work across the stack - from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
                   </p>
                 </div>
               </div>
