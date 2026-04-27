@@ -18,6 +18,9 @@ next.user-config.*
 
 # workspace files to rather sync via my gdrive (My Drive\Min Produksjon\26 liland.dev)
 /workspace
+*~
+*autosave*
+~*
 
 # Lock files
 package-lock.json

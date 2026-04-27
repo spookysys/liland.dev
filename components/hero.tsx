@@ -26,12 +26,12 @@ export function Hero() {
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch lg:gap-16">
             {/* Headshot */}
-            <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0">
-              <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-full lg:w-full">
+            <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0 lg:self-stretch">
+              <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:absolute lg:inset-0 lg:h-auto lg:w-auto">
                 <img
                   src="/images/profi-profil3.jpg"
                   alt="Eivind Liland"
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-[50%_33%]"
                 />
               </div>
               {/* Decorative elements */}
@@ -40,7 +40,7 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-8 text-center lg:mx-0 lg:max-w-none lg:flex-1 lg:items-start lg:justify-between lg:text-left">
+            <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-8 text-center lg:mx-0 lg:max-w-none lg:flex-1 lg:items-start lg:text-left">
               <div className="relative z-10 flex flex-col items-center lg:items-start">
                 <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                   Eivind Liland
