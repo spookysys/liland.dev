@@ -55,7 +55,7 @@ export function Hero() {
                     Hardware & Software Consultant
                   </h2>
                   <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
-                    I work across the stack - from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing optimized GPU compute shaders and bare-metal rendering engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                    I work across the stack - from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing optimized GPU compute shaders or graphics engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
                   </p>
                 </div>
               </div>
