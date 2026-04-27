@@ -15,6 +15,16 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Build & Zip",
+      "type": "shell",
+      "command": "npm run build && rm -f out.zip && cd out && zip -r ../out.zip . -x '*~' -x '*/~*' -x '*/_*' && cd ..",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
     }
   ]
 }

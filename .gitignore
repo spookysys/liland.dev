@@ -21,6 +21,8 @@ next.user-config.*
 *~
 *autosave*
 ~*
+/out.zip
+/out
 
 # Lock files
 package-lock.json
