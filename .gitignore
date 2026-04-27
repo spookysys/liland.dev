@@ -17,7 +17,7 @@ next.user-config.*
 .pnp.js
 
 # workspace files to rather sync via my gdrive (My Drive\Min Produksjon\26 liland.dev)
-/workspace/video
+/workspace
 
 # Lock files
 package-lock.json

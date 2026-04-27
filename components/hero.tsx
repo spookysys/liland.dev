@@ -29,7 +29,7 @@ export function Hero() {
             <div className="relative mx-auto w-fit shrink-0 pb-5 pr-5 lg:mx-0 lg:w-80 lg:pb-0 lg:pr-0">
               <div className="relative h-64 w-56 overflow-hidden rounded-3xl border-2 border-border shadow-2xl md:h-80 md:w-72 lg:h-full lg:w-full">
                 <img
-                  src="/images/profi-profil.jpg"
+                  src="/images/profi-profil3.jpg"
                   alt="Eivind Liland"
                   className="h-full w-full object-cover object-center"
                 />
