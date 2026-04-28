@@ -19,12 +19,12 @@ const projects = [
         detail: "Co-developed architecture with new ARM Cambridge team, 2007–2009. Spent half a year in Cambridge helping establish the team post-acquisition. Key stage in tile-based deferred rendering — sorting and binning geometry into screen-space tiles before rasterization.",
       },
       {
-        text: "FPGA-based GPU for Gameboy Advance (not completed)",
-        detail: "Sole developer, Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
-      },
-      {
         text: "Five ARM Mali GPU patents",
         detail: "Co-inventor. Falanx/ARM, 2003–2009. Patents covering graphics processing systems, data compression, and rendering pipeline innovations.",
+      },
+      {
+        text: "FPGA-based GPU for Gameboy Advance (not completed)",
+        detail: "Sole developer, Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
       },
     ],
   },
@@ -32,12 +32,12 @@ const projects = [
     category: "Software",
     items: [
       {
-        text: "Vulkan drivers for ARM Mali",
-        detail: "Team contributor. ARM, 2017–2018. Low-level driver development for the Mali GPU series.",
-      },
-      {
         text: "Pump geometry tools for rocket engines and zero-emission aircraft",
         detail: "Co-developer, Orbital Machines, 2019–2022. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry.",
+      },
+      {
+        text: "Vulkan drivers for ARM Mali",
+        detail: "Team contributor. ARM, 2017–2018. Low-level driver development for the Mali GPU series.",
       },
       {
         text: <><em>Texas</em> — real-time 3D in under 4,096 bytes. 1st place NVScene, Scene.org Award</>,
@@ -74,20 +74,20 @@ const projects = [
     category: "Verification",
     items: [
       {
-        text: "GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
-        detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and massively out-of-order caches.",
-      },
-      {
         text: "Out-of-order WARP cores, cluster-shared ALUs, and 2D interconnect",
         detail: "Verification engineer. Swarm64, 2012–2016. Functional verification of the parallel processor fabric I helped design.",
       },
       {
-        text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation",
-        detail: "Lead developer. Falanx, 2003–2006. Non-interactive game-style 3D demos in OpenGL ES running on FPGA prototypes at a fraction of final silicon speed, delivering visual quality beyond what audiences expected from shipping GPUs at the time.",
-      },
-      {
         text: "CI pipeline for hardware startup",
         detail: "Swarm64, 2012–2016. Automated coverage tracking, regression, build, and validation flows built on open-source tooling (Verilator-based).",
+      },
+      {
+        text: "GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
+        detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and massively out-of-order caches.",
+      },
+      {
+        text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation",
+        detail: "Lead developer. Falanx, 2003–2006. Non-interactive game-style 3D demos in OpenGL ES running on FPGA prototypes at a fraction of final silicon speed, delivering visual quality beyond what audiences expected from shipping GPUs at the time.",
       },
     ],
   },
