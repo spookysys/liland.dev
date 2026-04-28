@@ -55,7 +55,10 @@ export function Hero() {
                     Hardware & Software Consultant
                   </h2>
                   <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
-                    I work across the stack - from RTL design and verification to low-level software and parallel algorithms. Whether architecting out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing optimized GPU compute shaders or graphics engines, I love the challenge of finding trade-offs that maximize throughput with minimal power.
+                    I work either side of parallel compute — designing the hardware, or writing the software that runs on it. New architectures, RTL and verification, parallel software — depending on what the engagement needs.
+                  </p>
+                  <p className="mt-3 text-pretty leading-relaxed text-foreground/80">
+                    Two acquired startups behind that: the original Mali GPU at Falanx (ARM, 2006), and Swarm64&apos;s FPGA database accelerator (ServiceNow, 2021).
                   </p>
                 </div>
               </div>

@@ -8,11 +8,11 @@ const projects = [
     items: [
       {
         text: "Massively multicore FPGA processing platform",
-        detail: "Lead architect. Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order issue. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
+        detail: "Chief architect, Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order issue. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
       },
       {
-        text: "2D interconnect for massively parallel processor",
-        detail: "Lead architect. Swarm64, 2012–2016. High-bandwidth topology chosen for FPGA routing efficiency, sustaining thousands of simultaneous out-of-order requests across the multicore fabric.",
+        text: "2D interconnect for manycore processor",
+        detail: "Lead architect, Swarm64, 2012–2016. High-bandwidth topology chosen for FPGA routing efficiency, sustaining thousands of simultaneous out-of-order requests across the multicore fabric.",
       },
       {
         text: "Hierarchical tiler for mobile GPU — now ARM Mali, in billions of devices",
@@ -20,7 +20,7 @@ const projects = [
       },
       {
         text: "FPGA-based GPU for Gameboy Advance (not completed)",
-        detail: "Sole designer. Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
+        detail: "Sole developer, Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
       },
       {
         text: "Five ARM Mali GPU patents",
@@ -37,11 +37,11 @@ const projects = [
       },
       {
         text: "Pump geometry tools for rocket engines and zero-emission aircraft",
-        detail: "Co-developer. Orbital Machines, 2019–2022. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry.",
+        detail: "Co-developer, Orbital Machines, 2019–2022. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry.",
       },
       {
         text: <><em>Texas</em> — real-time 3D in under 4,096 bytes. 1st place NVScene, Scene.org Award</>,
-        detail: "Sole programmer. Keyboarders, 2008. Built on the then-new GeForce 8 — NVIDIA's first SIMT architecture with a unified shader pipeline. DX10 geometry shaders, screen-space ambient occlusion, procedural geometry, audio remixed from a Vista system sample. Pouët all-time #42.",
+        detail: "Coder, Keyboarders, 2008. Built on the then-new GeForce 8 — NVIDIA's first SIMT architecture with a unified shader pipeline. DX10 geometry shaders, screen-space ambient occlusion, procedural geometry, audio remixed from a Vista system sample. Pouët all-time #42.",
       },
       {
         text: <><em>Five Finger Discount</em> — 3D engine for Gameboy Advance. Scene.org Award nominations</>,
@@ -66,7 +66,7 @@ const projects = [
       },
       {
         text: "Subpixel triangle rasterizer for FPGA-based GPU",
-        detail: "Sole designer. ~2005. High-density, high-bandwidth design for the GBA FPGA GPU prototype.",
+        detail: "Personal project, ~2005. High-density, high-bandwidth design for the GBA FPGA GPU prototype.",
       },
     ],
   },
@@ -87,7 +87,7 @@ const projects = [
       },
       {
         text: "CI pipeline for hardware startup",
-        detail: "Lead developer. Swarm64, 2012–2016. Automated regression, build, and validation flows built on open-source tooling.",
+        detail: "Swarm64, 2012–2016. Automated coverage tracking, regression, build, and validation flows built on open-source tooling (Verilator-based).",
       },
     ],
   },
@@ -95,6 +95,8 @@ const projects = [
 
 function ProjectItem({ text, detail }: { text: React.ReactNode; detail: string }) {
   const [expanded, setExpanded] = useState(false)
+  const dateMatch = detail.match(/(?:, |\. )(~?\d{4}(?:\u2013\d{4})?)\./)
+  const dateRange = dateMatch?.[1]
 
   return (
     <li
@@ -105,6 +107,11 @@ function ProjectItem({ text, detail }: { text: React.ReactNode; detail: string }
       <span className="transition-colors group-hover:text-foreground">
         {text}
       </span>
+      {dateRange && (
+        <span className="mt-0.5 block text-[11px] font-mono tracking-wide text-muted-foreground/60">
+          {dateRange}
+        </span>
+      )}
 
       {/* Desktop hover tooltip */}
       <span className="pointer-events-none absolute left-0 top-full z-10 mt-2 hidden max-w-sm rounded-md border border-border bg-card p-3 text-xs leading-relaxed text-muted-foreground opacity-0 shadow-lg transition-opacity group-hover:opacity-100 md:block">

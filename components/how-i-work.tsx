@@ -31,7 +31,7 @@ export function HowIWork() {
                   Ready to talk?
                 </h3>
                 <p className="mb-6 text-base text-muted-foreground">
-                  From high-level system design to hands-on coding and verification, let's discuss how I can help accelerate your next project.
+                  If you&apos;re designing hardware — or developing software for a system with massively out-of-order parallel compute and coherent multi-level memory hierarchies — let&apos;s talk.
                 </p>
                 <Button asChild size="lg" className="h-14 w-full rounded-xl text-lg font-semibold shadow-lg transition-all hover:scale-[1.02] sm:w-auto sm:px-10">
                   <a href="mailto:hello@liland.dev">Get in Touch</a>

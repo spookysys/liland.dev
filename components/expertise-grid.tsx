@@ -17,7 +17,7 @@ const expertise = [
   {
     title: "Verification",
     description:
-      "UVM-based verification from module-level constrained-random to system-level integration. If you're building custom silicon or FPGA systems and need verification methodology or execution, I can step in at any level.",
+      "Verification from module-level constrained-random to system-level integration. UVM or light-weight testbench frameworks - at Swarm64 we ran a Verilator + C++ testbench flow. Custom silicon or FPGA.",
   },
 ]
 
