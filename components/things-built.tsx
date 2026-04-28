@@ -8,11 +8,11 @@ const projects = [
     items: [
       {
         text: "Massively multicore FPGA processing platform",
-        detail: "Lead architect. Swarm64, 2012–2016. High-density 4-core cluster with out-of-order 16-way SIMT scheduling for massively parallel database acceleration on Xilinx FPGAs.",
+        detail: "Lead architect. Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order issue. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
       },
       {
-        text: "Memory subsystem for massively parallel processor",
-        detail: "Lead architect. Swarm64, 2012–2016. Multi-level coherent cache hierarchy and 2D interconnect topology sustaining bandwidth for thousands of simultaneous out-of-order requests across the multicore fabric.",
+        text: "2D interconnect for massively parallel processor",
+        detail: "Lead architect. Swarm64, 2012–2016. High-bandwidth topology chosen for FPGA routing efficiency, sustaining thousands of simultaneous out-of-order requests across the multicore fabric.",
       },
       {
         text: "Hierarchical tiler for mobile GPU — now ARM Mali, in billions of devices",
@@ -37,7 +37,7 @@ const projects = [
       },
       {
         text: "Pump geometry tools for rocket engines and zero-emission aircraft",
-        detail: "Co-developer. Orbital Machines / OM Consulting, 2019–2023. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry. Deployed for a satellite launcher, a moon lander, and a zero-emission passenger aircraft program.",
+        detail: "Co-developer. Orbital Machines, 2019–2022. Python tools for parametric generation and optimization of centrifugal pump impeller and volute geometry.",
       },
       {
         text: <><em>Texas</em> — real-time 3D in under 4,096 bytes. 1st place NVScene, Scene.org Award</>,
@@ -54,15 +54,15 @@ const projects = [
     items: [
       {
         text: "Out-of-order 16-lane WARP core",
-        detail: "Lead designer. Swarm64, 2012–2016. RISC-based out-of-order core in SystemVerilog for massively parallel data processing on FPGA.",
+        detail: "Lead designer. Swarm64, 2012–2016. RISC SIMT core in SystemVerilog with barrel-threaded warps and scoreboarded out-of-order issue.",
       },
       {
-        text: "Fixed-point and floating-point arithmetic units",
-        detail: "Lead designer. Swarm64, 2012–2016. Arithmetic units designed for the WARP core pipeline.",
+        text: "Cluster-shared arithmetic units",
+        detail: "Lead designer. Swarm64, 2012–2016. Fixed- and floating-point ALU pool shared across the four cores in each cluster.",
       },
       {
-        text: "Coherent cache hierarchy with high-bandwidth 2D interconnect",
-        detail: "Lead architect. Swarm64, 2012–2016. Multi-level cache system with coherency and a 2D interconnect topology chosen for FPGA routing efficiency, sustaining bandwidth for thousands of simultaneous out-of-order requests across the multicore fabric.",
+        text: "2D interconnect and cache hierarchy",
+        detail: "Lead designer on interconnect, contributor on caches. Swarm64, 2012–2016. SystemVerilog implementation of the mesh interconnect; design and validation support on the L1/L2 hierarchy.",
       },
       {
         text: "Subpixel triangle rasterizer for FPGA-based GPU",
@@ -78,8 +78,8 @@ const projects = [
         detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and massively out-of-order caches.",
       },
       {
-        text: "Parallel processor core, arithmetic units, and interconnect",
-        detail: "Verification engineer. Falanx/ARM and Swarm64, 2003–2016. Functional verification across two different architectures — mobile GPU and parallel database accelerator.",
+        text: "Out-of-order WARP cores, cluster-shared ALUs, and 2D interconnect",
+        detail: "Verification engineer. Swarm64, 2012–2016. Functional verification of the parallel processor fabric I helped design.",
       },
       {
         text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation",

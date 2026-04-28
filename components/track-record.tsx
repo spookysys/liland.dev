@@ -2,17 +2,17 @@ const milestones = [
   {
     company: "ARM Mali GPU",
     description:
-      "Early employee at Falanx Microsystems, a startup in Norway that built the Mali GPU from scratch. Contributed across the stack, spanning RTL design and verification of the GPU to writing bare-metal software and pre-silicon tech demos for early FPGA prototypes. ARM acquired us in 2007 — Mali powers billions of devices today.",
+      "Early employee at Falanx Microsystems, a startup in Norway that built the Mali GPU from scratch. Contributed across the stack, spanning RTL design and verification of the GPU to writing bare-metal software and pre-silicon tech demos for early FPGA prototypes. ARM acquired us in 2006 — Mali powers billions of devices today.",
   },
   {
     company: "Swarm64",
     description:
-      "Co-founded Swarm64. We built FPGA-based hardware that accelerated database computation — massively parallel, deployed in the cloud. Partnered with Intel and Xilinx. Acquired by ServiceNow.",
+      "Co-founded Swarm64. We built FPGA-based hardware that accelerated database computation — massively parallel, deployed in the cloud. Partnered with Intel and Xilinx. Acquired by ServiceNow in 2021.",
   },
   {
     company: "Orbital Machines",
     description:
-      "Founded Orbital Machines, a sociocratic newspace startup that contributed to a number of space industry vehicles. Wrote Python software for designing and optimizing 3D propellant pump geometries for rocket engines.",
+      "Founded Orbital Machines, a sociocratic newspace startup that scaled to 15 employees. Worked on propellant pump designs for several customers in the launcher, lander, and zero-emission aviation space. Contributed to the Python tooling for parametric pump geometry design and optimization.",
   },
 ]
 
