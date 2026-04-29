@@ -10,31 +10,31 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://liland.dev'),
-  title: 'Eivind Liland - Hardware & Software Consultant',
+  title: 'Eivind Liland - Parallel Compute & Hardware Consultant',
   description,
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Eivind Liland - Hardware & Software Consultant',
+    title: 'Eivind Liland - Parallel Compute & Hardware Consultant',
     description,
     url: 'https://liland.dev',
     siteName: 'Eivind Liland',
     images: [
       {
-        url: '/images/profi-profil4.jpg',
+        url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Eivind Liland - Hardware & Software Consultant',
+        alt: 'Eivind Liland - Parallel Compute & Hardware Consultant',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eivind Liland - Hardware & Software Consultant',
+    title: 'Eivind Liland - Parallel Compute & Hardware Consultant',
     description,
-    images: ['/images/profi-profil4.jpg'],
+    images: ['/images/og-image.jpg'],
   },
 }
 
