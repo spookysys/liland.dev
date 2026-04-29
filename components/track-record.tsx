@@ -17,7 +17,7 @@ const milestones = [
   {
     company: "Flux & Flow (present)",
     description:
-      "Independent consulting - parallel architecture, RTL/verification, and parallel software.",
+      "Independent consulting — parallel architecture, RTL/verification, and parallel software. Hands-on RTL and verification on accelerator teams, GPU compute and shader work, and the parallel software that runs on top.",
   },
 ]
 

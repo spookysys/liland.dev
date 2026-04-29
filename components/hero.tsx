@@ -55,7 +55,7 @@ export function Hero() {
                     Hardware & Software Consultant
                   </h2>
                   <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
-                    I work either side of parallel compute — designing the hardware, or writing the software that runs on it. Whether that&apos;s designing and verifying out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing GPU compute shaders and parallel algorithms.
+                    I work either side of parallel compute — designing the hardware, or writing the software that runs on it. Whether that&apos;s designing and verifying out-of-order SIMT cores and coherent memory subsystems for AI and compute, or writing GPU compute shaders and parallel algorithms.
                   </p>
                   <p className="mt-3 text-pretty leading-relaxed text-foreground/80">
                     Early engineer at Falanx — the original Mali GPU (acquired by ARM, 2006). Co-founder of Swarm64 — FPGA database accelerator (acquired by ServiceNow, 2021).
@@ -63,15 +63,15 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="relative z-20 mt-2 flex flex-col items-center gap-4 sm:gap-5 lg:mt-0 lg:flex-row lg:items-end lg:justify-between">
-                <div className="pb-1">
+              <div className="relative z-20 mt-2 flex flex-col items-center gap-4 sm:gap-5 lg:mt-0 lg:flex-row lg:items-center lg:justify-between">
+                <div className="flex items-center gap-3">
                   <Button asChild size="lg" className="rounded-full shadow-lg transition-transform hover:scale-105">
                     <a href="mailto:hello@liland.dev">Get in touch</a>
                   </Button>
                 </div>
 
                 {/* Availability Status Pill */}
-                <div className="max-w-full pb-1">
+                <div className="max-w-full">
                   <a
                     href="mailto:hello@liland.dev"
                     className="inline-flex h-10 max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-border/60 bg-background/60 px-6 text-sm text-foreground/80 shadow-sm backdrop-blur-md"

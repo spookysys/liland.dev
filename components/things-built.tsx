@@ -8,7 +8,7 @@ const projects = [
     items: [
       {
         text: "Massively multicore FPGA processing platform",
-        detail: "Chief architect, Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order issue. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
+        detail: "Chief architect, Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order completion. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
       },
       {
         text: "2D interconnect for manycore processor",
