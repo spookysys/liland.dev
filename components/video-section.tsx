@@ -32,10 +32,11 @@ export function VideoSection() {
               aria-label="Load and play YouTube video"
             >
               <img
-                src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`}
+                src={`https://i.ytimg.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
                 alt=""
                 aria-hidden="true"
                 className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-90"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg` }}
               />
               <svg
                 className="relative z-10 h-16 w-16 text-white drop-shadow-lg opacity-90 transition-transform group-hover:scale-110"
