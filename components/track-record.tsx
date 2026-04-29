@@ -23,11 +23,10 @@ const milestones = [
 
 export function TrackRecord() {
   return (
-    <section className="relative bg-card px-6 py-20 md:px-12 lg:px-24">
-      {/* Decorative corner accents */}
-      <div className="absolute left-6 top-6 h-16 w-16 border-l-2 border-t-2 border-primary/30 md:left-12 lg:left-24" />
-      <div className="absolute bottom-6 right-6 h-16 w-16 border-b-2 border-r-2 border-primary/30 md:right-12 lg:right-24" />
-      
+    <section className="relative px-6 py-20 md:px-12 lg:px-24">
+      {/* Section accent line */}
+      <div className="absolute left-6 top-0 h-px w-[calc(100%-3rem)] bg-gradient-to-r from-transparent via-border to-transparent md:left-12 md:w-[calc(100%-6rem)] lg:left-24 lg:w-[calc(100%-12rem)]" />
+
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex items-center gap-4">
           <div className="h-12 w-1.5 rounded-full bg-accent" />

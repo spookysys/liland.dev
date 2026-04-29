@@ -71,8 +71,11 @@ export function Hero() {
                 </div>
 
                 {/* Availability Status Pill */}
-                <div className="max-w-full select-none pointer-events-none pb-1">
-                  <div className="inline-flex h-10 max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-border/60 bg-background/60 px-6 text-sm text-foreground/80 shadow-sm backdrop-blur-md">
+                <div className="max-w-full pb-1">
+                  <a
+                    href="mailto:hello@liland.dev"
+                    className="inline-flex h-10 max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-full border border-border/60 bg-background/60 px-6 text-sm text-foreground/80 shadow-sm backdrop-blur-md"
+                  >
                     <div className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-600 dark:text-emerald-500">
                         <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
@@ -86,7 +89,7 @@ export function Hero() {
                       </svg>
                       <span className="font-medium">On-site Berlin</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
