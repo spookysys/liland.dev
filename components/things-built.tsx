@@ -66,7 +66,7 @@ const projects = [
       },
       {
         text: "Hierarchical triangle rasterizer",
-        detail: "Personal project, ~2005. High-density, high-bandwidth design for hierarchical sub-pixel accurate, perspectice correct, UV mapped triangle rasterizer for GBA FPGA GPU prototype.",
+        detail: "Personal project, ~2005. High-density, high-bandwidth design for hierarchical sub-pixel accurate, perspective correct, UV mapped triangle rasterizer for GBA FPGA GPU prototype.",
       },
     ],
   },
