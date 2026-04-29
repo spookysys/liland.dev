@@ -8,23 +8,23 @@ const projects = [
     items: [
       {
         text: "Massively multicore FPGA processing platform",
-        detail: "Chief architect, Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded SIMT warps with scoreboarded out-of-order completion. Out-of-order at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
+        detail: "Chief architect, Swarm64, 2012–2016. A fabric of many 4-core clusters sharing L1 cache and an ALU pool per cluster. Each core ran barrel-threaded, multi-lane SIMT warps with scoreboarded out-of-order completion. Parallel execution at every level — barrel threading, scoreboarding, caches, interconnect — sustaining thousands of in-flight transactions across the fabric. Built on Xilinx FPGAs.",
       },
       {
         text: "2D interconnect for manycore processor",
         detail: "Lead architect, Swarm64, 2012–2016. High-bandwidth topology chosen for FPGA routing efficiency, sustaining thousands of simultaneous out-of-order requests across the multicore fabric.",
       },
       {
-        text: "Hierarchical tiler for mobile GPU — now ARM Mali, in billions of devices",
+        text: "Hierarchical tiler for mobile GPU",
         detail: "Co-developed architecture with new ARM Cambridge team, 2007–2009. Spent half a year in Cambridge helping establish the team post-acquisition. Key stage in tile-based deferred rendering — sorting and binning geometry into screen-space tiles before rasterization.",
       },
       {
-        text: "Five ARM Mali GPU patents",
-        detail: "Co-inventor. Falanx/ARM, 2003–2009. Patents covering graphics processing systems, data compression, and rendering pipeline innovations.",
+        text: "Five patents in graphics and parallel accelerators",
+        detail: "Co-inventor. Falanx/ARM and Swarm64, 2006–2018. Patents covering graphics processing systems, hierarchical tiling, graphics rendering, and graphics pipeline innovations.",
       },
       {
         text: "FPGA-based GPU for Gameboy Advance (not completed)",
-        detail: "Sole developer, Personal project, ~2005. A GPU on an FPGA inside a GBA cartridge — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
+        detail: "Sole developer, Personal project, ~2006. A programmable GPU on a low-cost FPGA inside a GBA cartridge, providing a powerful upgrade — the console has no graphics hardware beyond a simple 2D sprite/tile engine.",
       },
     ],
   },
@@ -53,20 +53,20 @@ const projects = [
     category: "RTL Design",
     items: [
       {
-        text: "Out-of-order 16-lane WARP core",
-        detail: "Lead designer. Swarm64, 2012–2016. RISC SIMT core in SystemVerilog with barrel-threaded warps and scoreboarded out-of-order issue.",
+        text: "Barrel-threaded OoO SIMT processor",
+        detail: "Lead designer. Swarm64, 2012–2016. Thousands-thread RISC SIMT core in SystemVerilog with deeply barrel-threaded 16-lane warps and scoreboarded out-of-order completion.",
       },
       {
-        text: "Cluster-shared arithmetic units",
-        detail: "Lead designer. Swarm64, 2012–2016. Fixed- and floating-point ALU pool shared across the four cores in each cluster.",
+        text: "Fixed- and floating-point arithmetic units",
+        detail: "Lead designer. Swarm64, 2012–2016. Fixed- and floating-point ALU pool with LUT units for special functions, shared across the four cores in each cluster.",
       },
       {
-        text: "2D interconnect and cache hierarchy",
-        detail: "Lead designer on interconnect, contributor on caches. Swarm64, 2012–2016. SystemVerilog implementation of the mesh interconnect; design and validation support on the L1/L2 hierarchy.",
+        text: "2D interconnect and coherent caches",
+        detail: "Lead designer on interconnect, contributor on caches. Swarm64, 2012–2016. SystemVerilog implementation of the mesh interconnect; design and validation support on the L1/L2 hierarchy with support for thousands of outstanding transfers, masking latency to SSD.",
       },
       {
-        text: "Subpixel triangle rasterizer for FPGA-based GPU",
-        detail: "Personal project, ~2005. High-density, high-bandwidth design for the GBA FPGA GPU prototype.",
+        text: "Hierarchical triangle rasterizer",
+        detail: "Personal project, ~2005. High-density, high-bandwidth design for hierarchical sub-pixel accurate, perspectice correct, UV mapped triangle rasterizer for GBA FPGA GPU prototype.",
       },
     ],
   },
@@ -74,19 +74,19 @@ const projects = [
     category: "Verification",
     items: [
       {
-        text: "Out-of-order WARP cores, cluster-shared ALUs, and 2D interconnect",
-        detail: "Verification engineer. Swarm64, 2012–2016. Functional verification of the parallel processor fabric I helped design.",
+        text: "Swarm64 SIMT cores, ALUs, caches and interconnect",
+        detail: "Verification engineer. Swarm64, 2012–2016. Constrained-random verification of the parallel processor fabric I helped design.",
       },
       {
-        text: "CI pipeline for hardware startup",
-        detail: "Swarm64, 2012–2016. Automated coverage tracking, regression, build, and validation flows built on open-source tooling (Verilator-based).",
+        text: "Swarm64 CI pipeline for hardware regression and validation",
+        detail: "Swarm64, 2012–2016. Automated coverage tracking, regression, build, and validation flows built on open-source tooling (Verilator-based) - inspired by software methods for CI, which at the time were further along than the typical UVM methodology.",
       },
       {
-        text: "GPU shader engine, texture mapper, tile buffer, and out-of-order caches",
-        detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and massively out-of-order caches.",
+        text: "Mali GPU shader engine, texture mapper, tile buffer and caches",
+        detail: "Verification engineer. Falanx/ARM, 2003–2009. Verification, debugging, and bug-fixing across the Mali GPU pipeline: VLIW shader processor, texture mapper, tile buffer with resolver, and caches with massive support for outstanding transfers. Live-lock prevention in the shader engine and texture mapper was a particular focus, with complex interactions across multiple clock domains and deep pipelines. UVM-based testbenches at the module level, with system-level validation on FPGA prototypes.",
       },
       {
-        text: "Real-time 3D tech demos for GPU marketing and pre-silicon validation",
+        text: "Mali GPU tech demos for marketing and validation",
         detail: "Lead developer. Falanx, 2003–2006. Non-interactive game-style 3D demos in OpenGL ES running on FPGA prototypes at a fraction of final silicon speed, delivering visual quality beyond what audiences expected from shipping GPUs at the time.",
       },
     ],
