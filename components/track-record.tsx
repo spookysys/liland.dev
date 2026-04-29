@@ -15,9 +15,9 @@ const milestones = [
       "Founded Orbital Machines, a sociocratic newspace startup that scaled to 15 employees. Worked on propellant pump designs for several customers in the launcher, lander, and zero-emission aviation space. Contributed to the Python tooling for parametric pump geometry design and optimization.",
   },
   {
-    company: "Flux & Flow (present)",
+    company: "Flux & Flow AS (2023 - present)",
     description:
-      "Independent consulting — parallel architecture, RTL/verification, and parallel software. Hands-on RTL and verification on accelerator teams, GPU compute and shader work, and the parallel software that runs on top.",
+      "Independent consulting through my own firm — continuing in aerospace with propellant systems and pump design before returning to parallel architecture, RTL, verification, and GPU compute.",
   },
 ]
 
