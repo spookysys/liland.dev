@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero"
 import { VideoSection } from "@/components/video-section"
 import { ExpertiseGrid } from "@/components/expertise-grid"
 import { ThingsBuilt } from "@/components/things-built"
-import { TrackRecord } from "@/components/track-record"
+import { TrackRecord } from "@/components/career-timeline"
 import { HowIWork } from "@/components/how-i-work"
 import { Footer } from "@/components/footer"
 

@@ -12,7 +12,7 @@ const expertise = [
   {
     title: "RTL Design",
     description:
-      "Digital design in SystemVerilog. I write RTL with verification in mind from the start, with constrained-random testbenches alongside each module, so what I hand over is already substantially validated.",
+      "Digital design in SystemVerilog. I write RTL with verification in mind from the start, with lightweight constrained-random testbenches alongside each module, so what I hand over is already substantially validated.",
   },
   {
     title: "Verification",
