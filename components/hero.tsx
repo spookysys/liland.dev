@@ -55,10 +55,10 @@ export function Hero() {
                     Hardware & Software Consultant
                   </h2>
                   <p className="mt-4 text-pretty leading-relaxed text-foreground/80">
-                    I work either side of parallel compute — designing the hardware, or writing the software that runs on it. New architectures, RTL and verification, parallel software — depending on what the engagement needs.
+                    I work either side of parallel compute — designing the hardware, or writing the software that runs on it. Whether that&apos;s designing and verifying out-of-order SIMT cores and parallel memory subsystems for AI and compute, or writing GPU compute shaders and parallel algorithms.
                   </p>
                   <p className="mt-3 text-pretty leading-relaxed text-foreground/80">
-                    Two acquired startups behind that: the original Mali GPU at Falanx (ARM, 2006), and Swarm64&apos;s FPGA database accelerator (ServiceNow, 2021).
+                    Early engineer at Falanx — the original Mali GPU (acquired by ARM, 2006). Co-founder of Swarm64 — FPGA database accelerator (acquired by ServiceNow, 2021).
                   </p>
                 </div>
               </div>
